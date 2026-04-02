@@ -6,7 +6,7 @@ import io
 # APIキー
 genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 
-model = genai.GenerativeModel("gemini-1.5-flash-latest")
+model = genai.GenerativeModel("gemini-1.0-pro-vision")
 st.title("記帳AIアシスタント")
 
 uploaded_file = st.file_uploader("領収書アップロード", type=["png","jpg","jpeg"])
